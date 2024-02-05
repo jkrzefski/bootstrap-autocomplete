@@ -18,7 +18,9 @@
     "src/*"
   ],
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "build-dev": "webpack --mode development --output-filename=bootstrap-autocomplete.js",
+    "build-prod": "webpack --mode production --output-filename=bootstrap-autocomplete.min.js"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.0.16",
@@ -36,6 +38,8 @@
     "ts-loader": "^8.0.11",
     "tslint": "^6.1.0",
     "typescript": "^4.0.5",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
     "webpack-stream": "^6.1.0"
   },
   "dependencies": {}
